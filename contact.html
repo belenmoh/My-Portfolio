@@ -1,3 +1,4 @@
+<!--This is my contact page-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,23 +9,54 @@
 <body>
     <header>
         <nav>
-            <a href="./index.html">Home page</a><br>
-            <a href="./about.html">About me</a><br>
+            <a href="./index.html">Home page</a> &nbsp; &nbsp; &nbsp;
+            <a href="./about.html">About me</a> &nbsp; &nbsp; &nbsp;
             <a href="./contact.html">Contact page</a>
         </nav>
-        <h1>Contact me</h1>
+        <h1><i>Contact Me</i></h1>
     </header>
     <section>
+        <p><b>If you have any course suggestions and project ideas, I would love to hear from you! Also, we can 
+            collaborate on different projects.<br> Feel free to reach me out: </b> <br>
         <!--Taking user input in a form-->
-        
+        <form action="/submit">
+             <div>
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter you name" id="name" name="name" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Enter you email address" id="email" name="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="number" placeholder="Enter your phone number" id="phone" name="phone">
+            </div>
+            <div>
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+            </div><br>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            </div><br>
+            <button type="submit">Submit</button>
+        </form>
     </section>
     <footer>
-        <p>If you have any course suggestions and project ideas, I would love to hear from you! Also, we can 
-            collaborate on different projects. Feel free to reach me out on:
-        <ul>
-            <li>Gmail <a href="belenbubumoh@gmail.com"></a></li>
-            <li>Linkedin <a href="https://www.linkedin.com/in/belen-mohammed-377084339/"></a></li>
-        </ul></p>
+        <p> <b>Other ways to get me: </b>
+            <ul>
+                <li><a href="belenbubumoh@gmail.com">gmail</a></li>
+                <li><a href="https://www.linkedin.com/in/belen-mohammed-377084339/">linkedin</a></li>
+                <li><a href="https://github.com/belenmoh">github</a></li>
+            </ul>
+        </p>
     </footer>
 </body>
 </html>
